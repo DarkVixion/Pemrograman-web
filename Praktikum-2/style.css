@@ -1,0 +1,159 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-image: url("https://www.sololearn.com/Uploads/header.jpg");
+    background-size: auto;
+}
+
+#header img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+
+#header p {
+    font-size: 25pt;
+    color: #3b464c;
+    padding-top: 5px;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.img-circle {
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+body {
+    font-family: 'Handlee', cursive;
+    font-size: 13pt;
+    background-color: white;
+    padding: 10px;
+    margin: 0;
+    background-image: url("https://amymhaddad.s3.amazonaws.com/morocco-blue.png");
+}
+
+h1 {
+    font-size: 15pt;
+    color: #20bcd5;
+    text-align: center;
+    padding: 18px 0 18px 0;
+    margin: 0 0 10px 0;
+}
+
+h1 span {
+    border: 4px dashed #20bcd5;
+    padding: 10px;
+}
+
+.section {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.quote {
+    font-size: 12pt;
+    text-align: right;
+    margin-top: 10px;
+}
+
+table,
+th,
+td {
+    border: 2px solid #cecece;
+    border-collapse: separate;
+    text-align: center;
+    table-layout: fixed;
+}
+
+table {
+    width: 100%;
+}
+
+.selected {
+    background-color: #f36f48;
+    font-weight: bolder;
+    color: white;
+}
+
+li {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+progress {
+    width: 100%;
+    height: 20px;
+    color: #3fb6b2;
+    background-color: #fff;
+}
+
+progress::-moz-progress-bar {
+    background: rgb(219, 219, 226);
+    color: #3fb6b2;
+}
+
+progress::-webkit-progress-value {
+    background: #3fb6b2;
+}
+
+progress::-webkit-progress-bar {
+    background: rgb(219, 219, 226);
+}
+
+#contact img {
+    height: 50px;
+    width: 50px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+#contact a {
+    text-decoration: none;
+}
+
+#contact img:hover {
+    opacity: 0.8;
+}
+
+#contact {
+    text-align: center;
+}
+
+.copyright {
+    font-size: 8pt;
+    text-align: right;
+    padding-bottom: 10px;
+    color: grey;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}

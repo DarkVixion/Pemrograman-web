@@ -71,6 +71,7 @@ td {
     border-collapse: separate;
     text-align: center;
     table-layout: fixed;
+    font-size: 13px;
 }
 
 table {
@@ -127,13 +128,6 @@ progress::-webkit-progress-bar {
     text-align: center;
 }
 
-.copyright {
-    font-size: 8pt;
-    text-align: right;
-    padding-bottom: 10px;
-    color: grey;
-}
-
 .topnav {
     overflow: hidden;
     background-color: #333;
@@ -146,14 +140,24 @@ progress::-webkit-progress-bar {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: #04AA6D;
     color: black;
 }
 
-.topnav a.active {
-    background-color: #04AA6D;
-    color: white;
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.flex-container>div {
+    width: 50 px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 25px;
+    font-size: 25px;
 }

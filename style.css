@@ -1,0 +1,65 @@
+body {
+    background-color: grey;
+    text-align: center;
+}
+
+h2 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color: black;
+    margin-top: 80px;
+}
+
+button {
+    font-size: 35px;
+}
+
+option {
+    text-align: center;
+}
+
+table {
+    width: 730px;
+    text-align: center;
+}
+
+tr {
+    height: 46;
+}
+
+td {
+    font-size: 25px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+table,
+th,
+td,
+tr {
+    border: 1px solid black;
+    padding: 16px;
+}
+
+.href {
+    font-family: 'Times New Roman', Times, serif
+}
+
+.data {
+    font-size: 21px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.link {
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif
+}
+
+form {
+    padding: 16px;
+    text-align: left;
+}
+
+.isi-form {
+    width: 1000px;
+    height: auto;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API | Praktikum WEB</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="center">
+        <div>
+            <label for="search">Search: </label>
+            <input type="text" id="search" placeholder="Search by category">
+            <button onclick="searchData()">Search</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+                <tbody id="dataContainer"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="footer">
+        Hafizh Fuqaha - 105219028
+    </div>
+</body>
+<script>
+    let allData = [];
+    fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
+        .then(response => response.json())
+        .then(data => {
+            allData = data.categories;
+            renderData(allData);
+        });
+
+    function renderData(data) {
+        let html = '';
+        data.forEach(item => {
+            html += `<tr>
+                    <td>${item.strCategory}</td>
+                  </tr>`;
+        });
+        document.querySelector('#dataContainer').innerHTML = html;
+    }
+
+    function searchData() {
+        let searchText = document.querySelector('#search').value;
+        let filteredData = allData.filter(item => item.strCategory.toLowerCase().includes(searchText.toLowerCase()));
+        renderData(filteredData);
+    }
+</script>
+
+</html>
